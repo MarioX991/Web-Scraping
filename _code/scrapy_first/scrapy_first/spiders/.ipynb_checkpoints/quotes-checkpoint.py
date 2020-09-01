@@ -18,7 +18,7 @@ class QuotesSpider(scrapy.Spider):
         dict = {"H1_tag" : h1_tag,
                 "Tags":tags}
                 # transform and save dict to the json file
-        with open('../../_data/file.json', 'w') as fp:
+        with open('../../../_data/file1.json', 'w') as fp:
             json.dump(dict, fp)
 
 
