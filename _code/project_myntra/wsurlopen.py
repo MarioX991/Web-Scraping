@@ -20,6 +20,8 @@ def urlopen(url):
     try:
         var ="no error"
         read = requests.get(url)
+        requests.session().close()
+        
     except HTTPError as e:
         var = "error occured"
     except URLError as e:
